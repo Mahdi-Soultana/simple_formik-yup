@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1rem;
 }
 form > div {
   padding: 0.2rem 0;
@@ -39,8 +40,8 @@ select {
   width: 100% !important;
 }
 form {
-  width: 500px;
-  max-width: 100%;
+  max-width: 500px !important;
+  /* max-width: 100%; */
   margin: auto;
 }
 code {

@@ -38,10 +38,9 @@ function App() {
             .email("you shold type email address !")
             .required("email required !"),
           password: Yup.string().required("Please Enter your password"),
-          confirm: Yup.string().oneOf(
-            [Yup.ref("password"), null],
-            "Passwords mustboy match",
-          ),
+          confirm: Yup.string()
+            .required("please match you passowrd ")
+            .oneOf([Yup.ref("password"), null], "Passwords must  match"),
           colors: Yup.string()
             .required("colors required")
             .oneOf(
